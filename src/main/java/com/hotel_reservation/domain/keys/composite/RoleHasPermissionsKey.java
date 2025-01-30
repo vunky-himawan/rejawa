@@ -12,6 +12,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Embeddable
 public class RoleHasPermissionsKey implements Serializable {
+    /**
+     * The ID of the role in the relationship.
+     */
     private Long roleId;
+
+    /**
+     * The ID of the permission in the relationship.
+     */
     private Long permissionId;
 }

@@ -12,6 +12,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Embeddable
 public class RoomHasFacilitiesKey implements Serializable {
+    /**
+     * The ID of the room in the relationship.
+     */
     private Long roomId;
+
+    /**
+     * The ID of the facility in the relationship.
+     */
     private Long facilityId;
 }
